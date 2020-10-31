@@ -1,0 +1,28 @@
+[alias]
+	# Aliases help
+	aliases = config --get-regexp alias
+
+	# Commits
+	amend = commit --amend --reuse-message=HEAD
+	undo = reset --hard
+	last = log -1 HEAD
+
+	# Branches
+	new = checkout -b
+	del = branch -D
+
+	# Simple shortcuts
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+
+
+[credentials]
+	# Helps to store password
+	helper = osxkeychain
+
+
+[pull]
+	# Default behaviour
+	rebase = false
