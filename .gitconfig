@@ -4,13 +4,14 @@
 
 	# Commits
 	amend = commit --amend --reuse-message=HEAD
+	save = push -u origin HEAD
 	undo = reset --hard
 	last = log -1 HEAD
 
 	# Branches
 	new = checkout -b
 	del = branch -D
-
+	
 	# Simple shortcuts
 	co = checkout
 	br = branch
