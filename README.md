@@ -1,7 +1,10 @@
 # Just dotfiles
 
-Copy all dotfiles to user directory: `./copy.sh`.
+1. Copy configuration files to user directory:\
+`cp -vi ./config/.* ~/`
 
-Updating tools & install iTerm2: `./brew.sh`
+2. Setup git basic information:\
+`./git.sh`
 
-Git basic info setup: `./git.sh`
+3. Install the tools:\
+`./brew.sh`

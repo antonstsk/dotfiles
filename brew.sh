@@ -2,28 +2,46 @@
 
 # Getting fresh version
 which -s brew
-if [[ $? != 0 ]] ; then
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+if [[ $? != 0 ]]; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 else
-    brew update
-    brew upgrade
+  brew update
+  brew upgrade
 fi
 
-# Installing recent versions of outdated macOS tools 
-brew install vim
+# Updating tools & installing devtools
 brew install imagemagick
+brew install composer
 brew install openssh
 brew install grep
+brew install vim
+brew install nvm
 brew install php
 brew install git
-brew install bash
+brew install zsh
 
-# Switching to fresh installed bash
-echo /usr/local/bin/bash | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/bash
+# Switching to zsh shell
+echo /usr/local/bin/zsh | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/zsh
 
-# Installing custom terminal emulator
+# User tools
+brew cask install the-unarchiver
+brew cask install transmission
+brew cask install appcleaner
+brew cask install vlc
+
+# Messengers
+brew cask install telegram
+brew cask install whatsapp
+brew cask install discord
+brew cask install slack
+
+# DevApps
+brew cask install sublime-text
+brew cask install tableplus
+brew cask install postman
 brew cask install iterm2
+brew cask install authy
 
 # Removing outdated versions
 brew cleanup

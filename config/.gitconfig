@@ -1,5 +1,5 @@
 [alias]
-	# Aliases help
+	# Help
 	aliases = config --get-regexp alias
 
 	# Commits
@@ -11,7 +11,7 @@
 	# Branches
 	new = checkout -b
 	del = branch -D
-	
+
 	# Simple shortcuts
 	co = checkout
 	br = branch
