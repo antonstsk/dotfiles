@@ -26,3 +26,7 @@ plugins=(
 
 # Keep this at the end of ZSH config
 source $ZSH/oh-my-zsh.sh
+
+# NVM setup
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
