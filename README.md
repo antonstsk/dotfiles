@@ -1,10 +1,10 @@
 # Just dotfiles
 
-1. Copy configuration files to user directory:\
-`cp -vi ./config/.* ~/`
+1. Install the tools:\
+   `./brew.sh && ./z.sh`
 
 2. Setup git basic information:\
-`./git.sh`
+   `./git.sh`
 
-3. Install the tools:\
-`./brew.sh`
+3. Copy configuration files to user directory:\
+   `cp -vi ./config/.* ~/`
