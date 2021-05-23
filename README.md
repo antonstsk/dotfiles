@@ -1,10 +1,11 @@
-# Just dotfiles
+# Web Developer dotfiles
+Helper package to speedup the configuration of a new machine for PHP web-developer.
 
 1. Install the tools:\
-   `./brew.sh && ./z.sh`
+   `./install.sh`
 
-2. Setup git basic information:\
-   `./git.sh`
-
-3. Copy configuration files to user directory:\
+2. Copy configuration files to user directory:\
    `cp -vi ./config/.* ~/`
+
+3. Setup git basic information:\
+   `./configure.sh`

@@ -24,24 +24,5 @@ brew install zsh
 echo /usr/local/bin/zsh | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/zsh
 
-# User tools
-brew cask install the-unarchiver
-brew cask install transmission
-brew cask install appcleaner
-brew cask install vlc
-
-# Messengers
-brew cask install telegram
-brew cask install whatsapp
-brew cask install discord
-brew cask install slack
-
-# DevApps
-brew cask install sublime-text
-brew cask install tableplus
-brew cask install postman
-brew cask install iterm2
-brew cask install authy
-
 # Removing outdated versions
 brew cleanup
