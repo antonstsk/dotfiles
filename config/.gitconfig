@@ -22,7 +22,10 @@
 [credentials]
 	# Helps to store password
 	helper = osxkeychain
-
+	
+[init]
+	# on fresh project
+        defaultBranch = master
 
 [pull]
 	# Default behaviour
